@@ -1,0 +1,92 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css?family=Arima+Madurai:100,300');
+body{
+    overflow: hidden;
+}
+#menu ul{
+    display: flex;
+    justify-content: center;
+}
+#menu .nav-tabs{
+    border-bottom: none;
+}
+#menu .nav-tabs li.active a{
+    background-color: transparent;
+    border-color: transparent;
+}
+#menu{
+    z-index: 9999;
+    position:fixed;
+    bottom: 10%;
+    font-family: 'Arima Madurai', cursive;
+    font-size: 25px;
+    text-align: center;
+}
+#menu li a:hover, #menu .nav li a:focus {
+ background-color: transparent;
+}
+#menu li a:hover {
+    border-color: transparent;
+}
+#menu li a{
+    /* Safari */
+    -webkit-transform: rotate(-45deg);
+
+    /* Firefox */
+    -moz-transform: rotate(-45deg);
+
+    /* IE */
+    -ms-transform: rotate(-45deg);
+    
+    /* Opera */
+    -o-transform: rotate(-45deg);
+
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    
+}
+.bordered{
+    border: 1px solid black;
+    min-width: calc(100vw - 60px);
+    min-height: calc(100vh - 60px);
+}
+.page-section{
+    position: fixed;
+    padding: 30px;
+    min-width: calc(100vw - 60px);
+    min-height: calc(100vh - 60px);
+}
+.color-home{
+    color: yellow;
+}
+.color-about{
+    color: green;
+}
+.color-skills{
+    color: red;
+}
+.color-work{
+    color: blue;
+}
+.color-contact{
+    color: brown;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
