@@ -4,6 +4,7 @@
    Author's custom styles
    ========================================================================== */
 @import url('https://fonts.googleapis.com/css?family=Arima+Madurai:100,300');
+@import url('https://fonts.googleapis.com/css?family=VT323');
 body{
     overflow: hidden;
 }
@@ -64,19 +65,19 @@ body{
     min-width: calc(100vw - 60px);
     min-height: calc(100vh - 60px);
 }
-.color-home, li.active>a.color-home,.color-home:focus{
+.color-home, .color-home:focus{
     color: #EAD3CB;
 }
-.color-about, li.active>a.color-about,.color-about:focus{
+.color-about,.color-about:focus{
     color: #FEC200;
 }
-.color-skills, li.active>a.color-skills,.color-skills:focus{
+.color-skills, .color-skills:focus{
     color: #02C8C7;
 }
-.color-work, li.active>a.color-work,.color-work:focus{
+.color-work, .color-work:focus{
     color: #C2D53E;
 }
-.color-contact, li.active>a.color-contact,.color-contact:focus{
+.color-contact, .color-contact:focus{
     color: #C796CD;
 }
 .home-logo{
@@ -87,9 +88,67 @@ body{
    font-family: 'Arima Madurai', cursive;  
 }
 .about-img{
-    width: 20%;
-    margin-left: 200px;
-    margin-top: 50px;
+    width: 30%;
+    padding-left: 5%;
+    padding-top: 5%;
+    text-align: center;
+}
+.hackerman{
+    font-family: 'VT323', monospace;
+    font-size: 40px;
+    color:black;
+    padding-top: 25vh;
+    margin: 0 auto;
+}
+.hackerman ul li a{
+    color: black;
+}
+#hackerwoman{
+    text-align: left;
+}
+#hackerwoman li a{   
+    color:white;   
+}
+.skilice{
+    text-align: right;
+    list-style: none;
+}
+
+.home-logo{
+    -webkit-animation: anim 10s infinite linear;
+    animation: anim 10s infinite linear;
+}
+
+@-webkit-keyframes anim {
+    from {-webkit-transform: rotateY(0deg);}
+    to {-webkit-transform: rotateY(360deg);}
+}
+
+@keyframes anim {
+    from {transform: rotateY(0deg);}
+    to {transform: rotateY(360deg);}
+}
+
+@media screen and (max-height: 480px){
+    #sub-home{
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .nav>li>a{
+        padding: 10px 5px;
+    }
+}
+@media screen and (max-width: 991px){
+    .skilice, #hackerwoman{
+        padding-left: 0;
+        text-align: center;
+    }
+    .hackerman{
+        font-size: 30px;
+        padding-top: 5vh;
+    }
 }
 
 

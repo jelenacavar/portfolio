@@ -10,11 +10,11 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
+        
         <link rel="stylesheet" href="css/bootstrap.min.css">        
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
-
+        
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body data-spy="scroll" data-target="#menu">
@@ -25,7 +25,7 @@
             <div class="row">
                 <div id="menu" class="col-xs-8 col-xs-offset-2">
                     <ul class="nav nav-tabs square-menu" role="tablist">
-                        <li><a href="#home" data-link="Home" class="color-home"><span class="glyphicon glyphicon-stop"></span></a></li>
+                        <li class="active"><a href="#home" data-link="Home" class="color-home">Home</a></li>
                         <li><a href="#about" data-link="About" class="color-about"><span class="glyphicon glyphicon-stop"></span></a></li>
                         <li><a href="#skills" data-link="Skills" class="color-skills"><span class="glyphicon glyphicon-stop"></span></a></li>
                         <li><a href="#work" data-link="Work" class="color-work"><span class="glyphicon glyphicon-stop"></span></a></li>
@@ -34,23 +34,97 @@
                 </div> 
             </div> 
         </div>
-            
+        
         <div id="home" class="page-section active-section" style="background-color: #EAD3CB;">
             <div class="bordered text-center">
                 <img src="img/logo.png" alt="homeimage" class="img-responsive home-logo"/> 
-                <h1 class="text-center home-text">JELENA CAVAR</h1>               
+                <h1 class="text-center home-text">JELENA CAVAR</h1>
+                <h2 class="home-text" id="sub-home" style="display: none;">Multimedia Designer</h2>
             </div>
         </div>                        
         <div id="about" class="page-section" style="display: none; background-color: #FEC200;">
             <div class="bordered">
                 <div class="about-img">
-                    <img src="img/me.jpg" alt="aboutimage" class="img-responsive"/> 
+                    <img src="img/me.jpg" alt="aboutimage" class="img-responsive img-thumbnail"/> 
                 </div>
             </div>
         </div>
         <div id="skills" class="page-section" style="display: none; background-color: #02C8C7;">
-            <div class="bordered">
+            <div class="bordered hackerman">
+                <div class="container-fluid">
+                    <div class="row"> 
+                        <div class="col-md-6">  
+                            <ul class="skilice">
+                                <li><a class="aab" href="#" data-toggle="modal" data-target="#js">JavaScript</a></li>
+                                <li><a class="aab" href="#" data-toggle="modal" data-target="#css">CSS3</a></li>
+                                <li><a class="aab" href="#" data-toggle="modal" data-target="#html">HTML5</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">  
+                            <ul id="hackerwoman" class="skilice">
+                                <li><a class="aa" href="#" data-toggle="modal" data-target="#ps">Photoshop</a></li>
+                                <li><a class="aa" href="#" data-toggle="modal" data-target="#ai">Illustrator</a></li>
+                                <li><a class="aa" href="#" data-toggle="modal" data-target="#ae">AfterEffects</a></li>
+                                <li><a class="aa" href="#" data-toggle="modal" data-target="#pr">Premiere</a></li>
+                            </ul>
+                        </div>
+                    </div>      
+                </div>
             </div>
+            <!-- Modal window for JS -->
+            <div class="modal fade" id="js" tabindex="-1" role="dialog" aria-labelledby="js">
+              <div class="modal-dialog  modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Modal windows for JS -->
+            <!-- Modal window for CSS -->
+            <div class="modal fade" id="css" tabindex="-1" role="dialog" aria-labelledby="css">
+              <div class="modal-dialog  modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Modal windows for CSS -->
+            <!-- Modal window for HTML -->
+            <div class="modal fade" id="html" tabindex="-1" role="dialog" aria-labelledby="html">
+              <div class="modal-dialog  modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Modal windows for HTML -->
         </div>
         <div id="work" class="page-section" style="display: none; background-color: #C2D53E;">
             <div class="bordered">
@@ -63,6 +137,7 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/vendor/bootstrap.min.js"></script>
-        <script src="js/main.js"></script>        
+        <script src="js/main.js"></script>
+        <script src="js/home.js"></script>          
     </body>
 </html>
