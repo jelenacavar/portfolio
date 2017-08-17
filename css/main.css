@@ -49,6 +49,10 @@ body{
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
     
 }
+#title{
+    font-family: 'Arima Madurai', cursive;
+     text-align: center;
+}
 .bordered{
     border: 1px solid black;
     min-width: calc(100vw - 60px);
@@ -60,22 +64,33 @@ body{
     min-width: calc(100vw - 60px);
     min-height: calc(100vh - 60px);
 }
-.color-home{
-    color: yellow;
+.color-home, li.active>a.color-home,.color-home:focus{
+    color: #EAD3CB;
 }
-.color-about{
-    color: green;
+.color-about, li.active>a.color-about,.color-about:focus{
+    color: #FEC200;
 }
-.color-skills{
-    color: red;
+.color-skills, li.active>a.color-skills,.color-skills:focus{
+    color: #02C8C7;
 }
-.color-work{
-    color: blue;
+.color-work, li.active>a.color-work,.color-work:focus{
+    color: #C2D53E;
 }
-.color-contact{
-    color: brown;
+.color-contact, li.active>a.color-contact,.color-contact:focus{
+    color: #C796CD;
 }
-
+.home-logo{
+    padding-top: 7%;
+    margin: 0 auto;
+}
+.home-text{
+   font-family: 'Arima Madurai', cursive;  
+}
+.about-img{
+    width: 20%;
+    margin-left: 200px;
+    margin-top: 50px;
+}
 
 
 

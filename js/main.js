@@ -18,7 +18,7 @@ $('.square-menu>li>a').on('click', function(e){
     $(id).addClass('active-section');
     $(id).show();
     var width = $(id).width();
-    $(id).css('right', width + 'px');
-    $(id).animate({right: "-="+width}, 500);
+    $(id).css('left', width + 'px');
+    $(id).animate({left: "-="+width}, 800);
 });
 
