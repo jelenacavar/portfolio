@@ -5,6 +5,7 @@
    ========================================================================== */
 @import url('https://fonts.googleapis.com/css?family=Arima+Madurai:100,300');
 @import url('https://fonts.googleapis.com/css?family=VT323');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 body{
     overflow: hidden;
 }
@@ -92,9 +93,8 @@ body{
    font-family: 'Arima Madurai', cursive;  
 }
 .about-img{
-    width: 30%;
     padding-left: 5%;
-    padding-top: 5%;
+    padding-top: 20%;
     text-align: center;
 }
 .hackerman{
@@ -103,6 +103,11 @@ body{
     color:black;
     padding-top: 25vh;
     margin: 0 auto;
+}
+.bla{
+     font-family: 'VT323', monospace;
+    font-size: 17px;
+    color:black;    
 }
 .hackerman ul li a{
     color: black;
@@ -122,9 +127,19 @@ body{
     -webkit-animation: anim 10s infinite linear;
     animation: anim 10s infinite linear;
 }
+.pacman-animation
 .carousel-control{    
     z-index: 5;
 }
+
+.about-sadrzaj{
+        font-family: 'Indie Flower', cursive;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .o-meni{
+        padding-top: 5%;
+    }   
 
 @-webkit-keyframes anim {
     from {-webkit-transform: rotateY(0deg);}
