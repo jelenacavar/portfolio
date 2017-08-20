@@ -10,11 +10,11 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        
+            
         <link rel="stylesheet" href="css/bootstrap.min.css">        
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
-        
+            
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body data-spy="scroll" data-target="#menu">
@@ -34,7 +34,7 @@
                 </div> 
             </div> 
         </div>
-        
+            
         <div id="home" class="page-section active-section" style="background-color: #EAD3CB;">
             <div class="bordered text-center">
                 <img src="img/logo.png" alt="homeimage" class="img-responsive home-logo"/> 
@@ -44,11 +44,37 @@
         </div>                        
         <div id="about" class="page-section" style="display: none; background-color: #FEC200;">
             <div class="bordered">
-                <div class="about-img">
-                    <img src="img/me.jpg" alt="aboutimage" class="img-responsive img-thumbnail"/> 
+                <div class="container-fluid">
+                    <div class="row"> 
+                        <div class="col-md-4">
+                            <div class="about-img">
+                                <img src="img/me.png" alt="aboutimage" class="img-responsive"/>                                                               
+                            </div>
+                        </div>
+                        <div class="col-md-8 o-meni">
+                            <h2 class="text-center about-sadrzaj">CORE STORY</h2>
+                            <div>
+                                <p class="about-sadrzaj">
+                                    Hello, my name is Jelena Cavar. I'm 20 years old girl from Croatia, living in Aarhus; Denmark.
+                                </p>
+                                <p class='about-sadrzaj'>
+                                    I am passionate about interactive media.
+                                    We live in the digital age and bringing the design in life has became essential.
+                                </p>
+                                <p class='about-sadrzaj'>
+                                    I'm studying Multimedia Design and Communication. Most of my projects are connected with my studies; where I learned 
+                                    work in the team and feel the pressure of the deadlines.                                  
+                                </p>
+                                <p class='about-sadrzaj'>
+                                    I'm really interested in film; as a part of a film festival in my hometown I had chance to learn from professionals.
+                                    I love to work on post production, especially with sound. My other big hobby is sport, mostly watching it on TV. :)          
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </div>    
         <div id="skills" class="page-section" style="display: none; background-color: #02C8C7;">
             <div class="bordered hackerman">
                 <div class="container-fluid">
@@ -73,59 +99,146 @@
             </div>
             <!-- Modal window for JS -->
             <div class="modal fade" id="js" tabindex="-1" role="dialog" aria-labelledby="js">
-              <div class="modal-dialog  modal-lg" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                  </div>
-                  <div class="modal-body">
-                    ...
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                  </div>
+                <div class="modal-dialog  modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title bla" id="myModalLabel">JavaScript</h4>
+                        </div>
+                        <div class="modal-body bla">
+                            <p>
+                                I'm capable to build animation in JavaScript for desktop, tablet or mobile, I mostly use them for improving the interaction on my websites. 
+                                Combined with an understanding of UX; I'm always trying to have in mind my target audience.                                
+                                Adept with popular frameworks such as jQuery.                               
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
             <!-- End Modal windows for JS -->
             <!-- Modal window for CSS -->
             <div class="modal fade" id="css" tabindex="-1" role="dialog" aria-labelledby="css">
-              <div class="modal-dialog  modal-lg" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                  </div>
-                  <div class="modal-body">
-                    ...
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                  </div>
+                <div class="modal-dialog  modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title bla" id="myModalLabel">CSS3</h4>
+                        </div>
+                        <div class="modal-body bla">
+                            <p>
+                                With new concepts, ideas and tools entering the world all the time, HTML and CSS are not to be underestimated. 
+                                The latest HTML-5 and CSS3 technologies combined with a whole host of new abilities such as appcache, local database, history, canvas..
+                                They are all perfect for making the latest and greatest web apps and building sites designed for users no matter what device they are on.                      
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
             <!-- End Modal windows for CSS -->
             <!-- Modal window for HTML -->
             <div class="modal fade" id="html" tabindex="-1" role="dialog" aria-labelledby="html">
-              <div class="modal-dialog  modal-lg" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                  </div>
-                  <div class="modal-body">
-                    ...
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                  </div>
+                <div class="modal-dialog  modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title bla" id="myModalLabel">HTML5</h4>
+                        </div>
+                        <div class="modal-body bla">
+                            <p>
+                                With new concepts, ideas and tools entering the world all the time, HTML and CSS are not to be underestimated. 
+                                The latest HTML-5 and CSS3 technologies combined with a whole host of new abilities such as appcache, local database, history, canvas..
+                                They are all perfect for making the latest and greatest web apps and building sites designed for users no matter what device they are on.                      
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
             <!-- End Modal windows for HTML -->
         </div>
+         <div class="modal fade" id="photoshop" tabindex="-1" role="dialog" aria-labelledby="Photoshop">
+                <div class="modal-dialog  modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title bla" id="myModalLabel">Photoshop</h4>
+                        </div>
+                        <div class="modal-body bla">
+                            <p>
+                               Photoshop is a base of every design process. I've been using it for making cinemagraphics, infographics, gifs, posters, web-design mockups and many other things.
+                               Photoshop is my first step in the process of making the website. 
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="modal fade" id="illustrator" tabindex="-1" role="dialog" aria-labelledby="illustrator">
+                <div class="modal-dialog  modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title bla" id="myModalLabel">Photoshop</h4>
+                        </div>
+                        <div class="modal-body bla">
+                            <p>
+                               
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="modal fade" id="photoshop" tabindex="-1" role="dialog" aria-labelledby="Photoshop">
+                <div class="modal-dialog  modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title bla" id="myModalLabel">Photoshop</h4>
+                        </div>
+                        <div class="modal-body bla">
+                            <p>
+                               Photoshop is a base of every design process. I've been using it for making cinemagraphics, infographics, gifs, posters, web-design mockups and many other things.
+                               Photoshop is my first step in the process of making the website. 
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="modal fade" id="photoshop" tabindex="-1" role="dialog" aria-labelledby="Photoshop">
+                <div class="modal-dialog  modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title bla" id="myModalLabel">Photoshop</h4>
+                        </div>
+                        <div class="modal-body bla">
+                            <p>
+                               Photoshop is a base of every design process. I've been using it for making cinemagraphics, infographics, gifs, posters, web-design mockups and many other things.
+                               Photoshop is my first step in the process of making the website. 
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         <div id="work" class="page-section" style="display: none; background-color: #C2D53E;">
             <div class="bordered">
             </div>
