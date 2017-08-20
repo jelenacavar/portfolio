@@ -42,7 +42,7 @@ $(document).ready(function(){
         }
     });
     
-    $('.skilice>li>a').on('click', function(){
+    $('.skilice>li>a, .about-img>a').on('click', function(){
         $('#menu').hide();
         $('.carousel-control').hide();
     });
