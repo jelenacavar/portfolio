@@ -13,7 +13,7 @@
                 
         <link rel="stylesheet" href="css/bootstrap.min.css">        
         <link rel="stylesheet" href="css/main.css">
-                
+        <link rel="stylesheet" href="css/pacman.css">        
     </head>
     <body data-spy="scroll" data-target="#menu">
         <!--[if lt IE 8]>
@@ -60,14 +60,25 @@
             <div class="bordered hackerman">
                 <div class="container-fluid">
                     <div class="row"> 
-                        <div class="col-md-6">  
+                        <div class="col-sm-2 hidden-xs">
+                            <div class="pacman-holder moving">
+                            <div class="pacman-container">
+                                <div class="pacman-body"></div>
+                                <div class="pacman-mouth">
+                                    <div class="pacman"></div>
+                                </div>
+                            </div>
+                            <div class="dot"></div>
+                        </div>
+                        </div>
+                        <div class="col-sm-4">  
                             <ul class="skilice">
                                 <li><a class="aab" href="#" data-toggle="modal" data-target="#js">JavaScript</a></li>
                                 <li><a class="aab" href="#" data-toggle="modal" data-target="#css">CSS3</a></li>
                                 <li><a class="aab" href="#" data-toggle="modal" data-target="#html">HTML5</a></li>
                             </ul>
                         </div>
-                        <div class="col-md-6">  
+                        <div class="col-sm-6">  
                             <ul id="hackerwoman" class="skilice">
                                 <li><a class="aa" href="#" data-toggle="modal" data-target="#ps">Photoshop</a></li>
                                 <li><a class="aa" href="#" data-toggle="modal" data-target="#ai">Illustrator</a></li>
