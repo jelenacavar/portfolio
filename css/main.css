@@ -127,16 +127,16 @@ body{
     -webkit-animation: anim 10s infinite linear;
     animation: anim 10s infinite linear;
 }
-.pacman-animation
+
 .carousel-control{    
-    z-index: 5;
+    z-index: 10;
 }
 
 .about-sadrzaj{
         font-family: 'Indie Flower', cursive;
         font-size: 25px;
         font-weight: 600;
-    }
+    } 
     .o-meni{
         padding-top: 5%;
     }   
