@@ -55,10 +55,18 @@
                     <div class="row"> 
                         <div class="col-md-4">
                             <div class="about-img">
-                                <img src="img/me.png" alt="aboutimage" class="img-responsive"/>                                                               
+                                <div class="flip-container hidden-xs">
+                                  <div class="flipper">
+                                    <img src="img/me.png" alt="aboutimage" class="img-responsive hidden-xs"/>
+                                    <div class="back">
+                                      <div class="back-logo"><img src="img/back.jpg" alt="logo" class="img-responsive"/></div>                                  
+                                    </div>
+                                  </div>
+                                </div>
+                                <a href="#" data-toggle="modal" data-target="#aboutme"><img src="img/me.png" alt="aboutimage" class="img-responsive hidden-sm hidden-md hidden-lg"/></a>
                             </div>
                         </div>
-                        <div class="col-md-8 o-meni">
+                        <div class="col-md-8 o-meni hidden-xs">
                             <h2 class="text-center about-sadrzaj">CORE STORY</h2>
                             <div>
                                 <p class="about-sadrzaj">
@@ -81,6 +89,40 @@
                     </div>
                 </div>
             </div>
+            <!-- Modal window for about mobile -->
+            <div class="modal fade" id="aboutme" tabindex="-1" role="dialog" aria-labelledby="js">                
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content" style="background-color: #FEC200;">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body ">
+                            <h2 class="text-center about-sadrzaj">CORE STORY</h2>
+                            <div>
+                                <p class="about-sadrzaj">
+                                    Hello, my name is Jelena Cavar. I'm 20 years old girl from Croatia, living in Aarhus; Denmark.
+                                </p>
+                                <p class='about-sadrzaj'>
+                                    I am passionate about interactive media.
+                                    We live in the digital age and bringing the design in life has became essential.
+                                </p>
+                                <p class='about-sadrzaj'>
+                                    I'm studying Multimedia Design and Communication. Most of my projects are connected with my studies; where I learned 
+                                    work in the team and feel the pressure of the deadlines.                                  
+                                </p>
+                                <p class='about-sadrzaj'>
+                                    I'm really interested in film; as a part of a film festival in my hometown I had chance to learn from professionals.
+                                    I love to work on post production, especially with sound. My other big hobby is sport, mostly watching it on TV. :)          
+                                </p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>                  
+            <!-- End Modal windows fora about -->
         </div>    
         <div id="skills" class="page-section" style="display: none; background-color: #02C8C7;">
             <div class="bordered hackerman">
