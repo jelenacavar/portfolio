@@ -10,18 +10,17 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-            
+
         <link rel="stylesheet" href="css/bootstrap.min.css">        
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
-            
+        <link rel="stylesheet" href="css/pacman.css">        
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body data-spy="scroll" data-target="#menu">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div class="container-fluid">
+        <div class="container-fluid">                                    
             <div class="row">
                 <div id="menu" class="col-xs-8 col-xs-offset-2">
                     <ul class="nav nav-tabs square-menu" role="tablist">
@@ -31,7 +30,16 @@
                         <li><a href="#work" data-link="Work" class="color-work"><span class="glyphicon glyphicon-stop"></span></a></li>
                         <li><a href="#contact" data-link="Contact" class="color-contact"><span class="glyphicon glyphicon-stop"></span></a></li>
                     </ul>
-                </div> 
+                </div>
+                <div class="mobile-controls" id="mc">
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#" id="getprev" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    </a>
+                    <a class="right carousel-control" href="#" id="getnext" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    </a>
+                </div>
             </div> 
         </div>
             
@@ -79,14 +87,25 @@
             <div class="bordered hackerman">
                 <div class="container-fluid">
                     <div class="row"> 
-                        <div class="col-md-6">  
+                        <div class="col-sm-2 hidden-xs">
+                            <div class="pacman-holder moving">
+                            <div class="pacman-container">
+                                <div class="pacman-body"></div>
+                                <div class="pacman-mouth">
+                                    <div class="pacman"></div>
+                                </div>
+                            </div>
+                            <div class="dot"></div>
+                        </div>
+                        </div>
+                        <div class="col-sm-4">  
                             <ul class="skilice">
                                 <li><a class="aab" href="#" data-toggle="modal" data-target="#js">JavaScript</a></li>
                                 <li><a class="aab" href="#" data-toggle="modal" data-target="#css">CSS3</a></li>
                                 <li><a class="aab" href="#" data-toggle="modal" data-target="#html">HTML5</a></li>
                             </ul>
                         </div>
-                        <div class="col-md-6">  
+                        <div class="col-sm-6">  
                             <ul id="hackerwoman" class="skilice">
                                 <li><a class="aa" href="#" data-toggle="modal" data-target="#ps">Photoshop</a></li>
                                 <li><a class="aa" href="#" data-toggle="modal" data-target="#ai">Illustrator</a></li>
@@ -99,6 +118,32 @@
             </div>
             <!-- Modal window for JS -->
             <div class="modal fade" id="js" tabindex="-1" role="dialog" aria-labelledby="js">
+
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                  </div>
+                  <div class="modal-body">
+                      <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      </p>
+                      <p>
+                          Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.
+                      </p>
+                      <p>
+                          Fusce convallis, mauris imperdiet gravida bibendum, nisl turpis suscipit mauris, sed placerat ipsum urna sed risus. In convallis tellus a mauris. Curabitur non elit ut libero tristique sodales. Mauris a lacus. Donec mattis semper leo. In hac habitasse platea dictumst. Vivamus facilisis diam at odio. Mauris dictum, nisi eget consequat elementum, lacus ligula molestie metus, non feugiat orci magna ac sem. Donec turpis. Donec vitae metus. Morbi tristique neque eu mauris. Quisque gravida ipsum non sapien. Proin turpis lacus, scelerisque vitae, elementum at, lobortis ac, quam. Aliquam dictum eleifend risus. In hac habitasse platea dictumst. Etiam sit amet diam. Suspendisse odio. Suspendisse nunc. In semper bibendum libero.
+                      </p>
+                      <p>
+                          Proin nonummy, lacus eget pulvinar lacinia, pede felis dignissim leo, vitae tristique magna lacus sit amet eros. Nullam ornare. Praesent odio ligula, dapibus sed, tincidunt eget, dictum ac, nibh. Nam quis lacus. Nunc eleifend molestie velit. Morbi lobortis quam eu velit. Donec euismod vestibulum massa. Donec non lectus. Aliquam commodo lacus sit amet nulla. Cras dignissim elit et augue. Nullam non diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In hac habitasse platea dictumst. Aenean vestibulum. Sed lobortis elit quis lectus. Nunc sed lacus at augue bibendum dapibus.
+                      </p>
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+
                 <div class="modal-dialog  modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -116,6 +161,7 @@
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                         </div>
                     </div>
+
                 </div>
             </div>
             <!-- End Modal windows for JS -->
@@ -251,6 +297,5 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
-        <script src="js/home.js"></script>          
     </body>
 </html>
