@@ -19,9 +19,12 @@ body{
     background-color: transparent;
     border-color: transparent;
 }
+.mobile-controls{
+    display: none;
+}
 #menu{
-    z-index: 9999;
-    position:fixed;
+    z-index: 4;
+    position: fixed;
     bottom: 10%;
     font-family: 'Arima Madurai', cursive;
     font-size: 25px;
@@ -60,6 +63,7 @@ body{
     min-height: calc(100vh - 60px);
 }
 .page-section{
+    touch-action: auto;
     position: fixed;
     padding: 30px;
     min-width: calc(100vw - 60px);
@@ -118,6 +122,9 @@ body{
     -webkit-animation: anim 10s infinite linear;
     animation: anim 10s infinite linear;
 }
+.carousel-control{    
+    z-index: 5;
+}
 
 @-webkit-keyframes anim {
     from {-webkit-transform: rotateY(0deg);}
@@ -149,6 +156,12 @@ body{
         font-size: 30px;
         padding-top: 5vh;
     }
+}
+@media screen and (max-width: 768px)
+{
+    .mobile-controls{
+        display: block;        
+    }        
 }
 
 
