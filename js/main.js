@@ -1,6 +1,4 @@
-$(document).ready(function(){
-    
-   $('#sub-home').slideDown(2000);
+$(document).ready(function(){    
     
    $('.square-menu>li>a').hover(function(){
        if ($(this).parent().hasClass('active')){
@@ -59,7 +57,7 @@ $(document).ready(function(){
     $('#getprev').on('click',function(){
         getPrev().trigger('click');       
     });
-        
+    drawCanvas();
     function getNext(){
 
         var next = $('#menu>ul>li.active').next().children('a').first();
@@ -81,4 +79,27 @@ $(document).ready(function(){
         }        
         return prev;
     }
+    function drawCanvas()
+    {
+        var canvas = document.getElementById("clothesWire");
+
+        if (canvas.getContext) {
+            var ctx = canvas.getContext('2d');
+            var width = window.innerWidth;        
+            var end = width - 80;
+            canvas.setAttribute('width', end);
+            var middle = end / 2;
+            ctx.beginPath();
+            ctx.bezierCurveTo(20, 50, middle, 100, end, 50);            
+            ctx.stroke();
+          }        
+    }
+    
+    $( window ).resize(drawCanvas);
+});
+
+$(window).load(function(){
+    $('#loader').hide();
+    $('body').removeClass('loading');
+    $('#page').show();
 });
